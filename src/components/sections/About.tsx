@@ -2,19 +2,36 @@ import Link from "next/link";
 import { Link as ScrollLink, Element } from "react-scroll";
 import { motion } from "framer-motion";
 
-const NavBar = () => {
+const About = () => {
   return (
-    <Element name="about" className="h-screen flex items-center justify-center">
-          <motion.h2
-            className="text-4xl"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Section 1
-          </motion.h2>
-        </Element>
+    <Element
+      name="about"
+      className="min-h-screen flex flex-col"
+    >
+      {/* Main Bout Section */}
+      <h1> 
+        Alex Chao
+      </h1>
+      <div> {/* this guy is special, only guy who looks like this */}
+        PHD Student, Place, Email
+      </div>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+      </p>
+
+      {/* Education */}
+      <h2>
+        Education
+      </h2>
+      <h3>
+        Duke University | Durham, NC | 2022
+      </h3>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>
+
+    </Element>
   );
 };
 
-export default NavBar;
+export default About;

@@ -4,7 +4,8 @@ import { Link as ScrollLink, Element } from "react-scroll";
 const NavBar = () => {
   return (
     <nav className="fixed top-0 left-0 h-screen w-64 shadow-lg z-10 p-4 bg-[#613F75]">
-      <div className="flex flex-col space-y-10 w-full text-center pt-32">
+      <div className="flex flex-col space-y-10 w-full text-center pt-32 items-center">
+        <div className="w-40 h-40 bg-[#CFBFF7] rounded-full"></div>
         <ScrollLink
           to="about"
           smooth={true}
