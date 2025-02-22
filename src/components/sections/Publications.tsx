@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 const Publications = () => {
   return (
-    <Element name="publications" className="min-h-screen flex flex-col">
+    <div>
       <h1>Publications</h1>
       
       {/* Timeline */}
-    </Element>
+    </div>
   );
 };
 

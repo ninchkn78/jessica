@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 const Teaching = () => {
   return (
-    <Element name="teaching" className="min-h-screen flex flex-col bg-gray-200">
+    <div>
       {/* Teaching Blurb */}
       <div>
-        <div>
-          <h1>Teaching</h1>
+        <div className="m-6 px-6 py-6 bg-white rounded-3xl shadow-lg">
+          <h1 className="pb-2">Teaching</h1>
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl parturient
             imperdiet fames nibh justo. Amet neque class dis quam sollicitudin
@@ -27,105 +27,121 @@ const Teaching = () => {
           </p>
         </div>
 
-        <div>
+        <div className="px-12">
           {/* Instructing Experience */}
           <div>
             <h2>Instructor Experience</h2>
 
-            <h3>CompSci 210 Introduction to Computer Systems</h3>
-            <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum odor amet, consectetuer adipiscing elit. Nisl parturient
-              imperdiet fames nibh justo. Amet neque class dis quam sollicitudin
-              ante natoque sit. Risus curae rhoncus finibus nam potenti. Mus
-              proin suspendisse suscipit sodales adipiscing nostra. Vitae quis
-              est fames phasellus potenti libero. Quis cursus sed egestas quam
-              tempor montes facilisis pulvinar. Sociosqu laoreet augue viverra
-              suspendisse ac mauris aliquet adipiscing. Ridiculus cursus pretium
-              curae pellentesque felis tincidunt.
-            </p>
+            <div className="py-2">
+              <h3>CompSci 210 Introduction to Computer Systems</h3>
+              <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl
+                parturient imperdiet fames nibh justo. Amet neque class dis quam
+                sollicitudin ante natoque sit. Risus curae rhoncus finibus nam
+                potenti. Mus proin suspendisse suscipit sodales adipiscing
+                nostra. Vitae quis est fames phasellus potenti libero. Quis
+                cursus sed egestas quam tempor montes facilisis pulvinar.
+                Sociosqu laoreet augue viverra suspendisse ac mauris aliquet
+                adipiscing. Ridiculus cursus pretium curae pellentesque felis
+                tincidunt.
+              </p>
+            </div>
 
-            <h3>CompSci 210 Introduction to Computer Systems</h3>
-            <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum odor amet, consectetuer adipiscing elit. Nisl parturient
-              imperdiet fames nibh justo. Amet neque class dis quam sollicitudin
-              ante natoque sit. Risus curae rhoncus finibus nam potenti. Mus
-              proin suspendisse suscipit sodales adipiscing nostra. Vitae quis
-              est fames phasellus potenti libero. Quis cursus sed egestas quam
-              tempor montes facilisis pulvinar. Sociosqu laoreet augue viverra
-              suspendisse ac mauris aliquet adipiscing. Ridiculus cursus pretium
-              curae pellentesque felis tincidunt.
-            </p>
+            <div className="py-2">
+              <h3>CompSci 210 Introduction to Computer Systems</h3>
+              <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl
+                parturient imperdiet fames nibh justo. Amet neque class dis quam
+                sollicitudin ante natoque sit. Risus curae rhoncus finibus nam
+                potenti. Mus proin suspendisse suscipit sodales adipiscing
+                nostra. Vitae quis est fames phasellus potenti libero. Quis
+                cursus sed egestas quam tempor montes facilisis pulvinar.
+                Sociosqu laoreet augue viverra suspendisse ac mauris aliquet
+                adipiscing. Ridiculus cursus pretium curae pellentesque felis
+                tincidunt.
+              </p>
+            </div>
+            
+            <div className="py-2">
+              <h3>CompSci 210 Introduction to Computer Systems</h3>
+              <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl
+                parturient imperdiet fames nibh justo. Amet neque class dis quam
+                sollicitudin ante natoque sit. Risus curae rhoncus finibus nam
+                potenti. Mus proin suspendisse suscipit sodales adipiscing
+                nostra. Vitae quis est fames phasellus potenti libero. Quis
+                cursus sed egestas quam tempor montes facilisis pulvinar.
+                Sociosqu laoreet augue viverra suspendisse ac mauris aliquet
+                adipiscing. Ridiculus cursus pretium curae pellentesque felis
+                tincidunt.
+              </p>
+            </div>
 
-            <h3>CompSci 210 Introduction to Computer Systems</h3>
-            <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum odor amet, consectetuer adipiscing elit. Nisl parturient
-              imperdiet fames nibh justo. Amet neque class dis quam sollicitudin
-              ante natoque sit. Risus curae rhoncus finibus nam potenti. Mus
-              proin suspendisse suscipit sodales adipiscing nostra. Vitae quis
-              est fames phasellus potenti libero. Quis cursus sed egestas quam
-              tempor montes facilisis pulvinar. Sociosqu laoreet augue viverra
-              suspendisse ac mauris aliquet adipiscing. Ridiculus cursus pretium
-              curae pellentesque felis tincidunt.
-            </p>
-
-            <h3>CompSci 210 Introduction to Computer Systems</h3>
-            <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum odor amet, consectetuer adipiscing elit. Nisl parturient
-              imperdiet fames nibh justo. Amet neque class dis quam sollicitudin
-              ante natoque sit. Risus curae rhoncus finibus nam potenti. Mus
-              proin suspendisse suscipit sodales adipiscing nostra. Vitae quis
-              est fames phasellus potenti libero. Quis cursus sed egestas quam
-              tempor montes facilisis pulvinar. Sociosqu laoreet augue viverra
-              suspendisse ac mauris aliquet adipiscing. Ridiculus cursus pretium
-              curae pellentesque felis tincidunt.
-            </p>
+            <div className="py-2">
+              <h3>CompSci 210 Introduction to Computer Systems</h3>
+              <h4>Fall XXXX, Spring XXXX, Fall XXXX cotaught with</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl
+                parturient imperdiet fames nibh justo. Amet neque class dis quam
+                sollicitudin ante natoque sit. Risus curae rhoncus finibus nam
+                potenti. Mus proin suspendisse suscipit sodales adipiscing
+                nostra. Vitae quis est fames phasellus potenti libero. Quis
+                cursus sed egestas quam tempor montes facilisis pulvinar.
+                Sociosqu laoreet augue viverra suspendisse ac mauris aliquet
+                adipiscing. Ridiculus cursus pretium curae pellentesque felis
+                tincidunt.
+              </p>
+            </div>
           </div>
 
           {/* TA Experience */}
-          <div>
+          <div className="py-6">
             <h2>TA Experience</h2>
-            <ul>
+            <ul className="py-2">
               <li>
-                [Fall XXXX, Spring XXXX] CompSci 210 Introduction to Computer
-                Systems
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
               </li>
               <li>
-                [Fall XXXX, Spring XXXX] CompSci 210 Introduction to Computer
-                Systems
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
               </li>
               <li>
-                [Fall XXXX, Spring XXXX] CompSci 210 Introduction to Computer
-                Systems
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
               </li>
               <li>
-                [Fall XXXX, Spring XXXX] CompSci 210 Introduction to Computer
-                Systems
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
               </li>
               <li>
-                [Fall XXXX, Spring XXXX] CompSci 210 Introduction to Computer
-                Systems
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
               </li>
               <li>
-                [Fall XXXX, Spring XXXX] CompSci 210 Introduction to Computer
-                Systems
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
+              </li>
+              <li>
+                [Fall XXXX, Spring XXXX] <b>CompSci 210 Introduction to Computer
+                Systems</b>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </Element>
+    </div>
   );
 };
 
