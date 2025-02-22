@@ -21,7 +21,7 @@ export default function Home() {
         <Element
           name="about"
           id="about"
-          className="min-h-screen flex flex-col p-12 snap-start snap-always"
+          className="min-h-fit flex flex-col p-12 snap-start snap-always"
         >
           <About />
         </Element>
@@ -42,7 +42,7 @@ export default function Home() {
         <Element
           name="publications"
           id="publications"
-          className="min-h-screen flex flex-col p-12 snap-start snap-always"
+          className="min-h-fit flex flex-col p-12 snap-start snap-always"
         >
           <Publications />
         </Element>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Publications = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <h1>Publications</h1>
       
       {/* Timeline */}

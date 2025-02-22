@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       {/* Main Bout Section */}
       <h1>Alex Chao</h1>
       <div className="font-sans text-2xl pb-4">
