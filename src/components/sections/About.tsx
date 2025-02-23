@@ -21,7 +21,7 @@ const About = () => {
       <div className="pt-12">
         <h2>Education</h2>
         {education.map((edu, index) => (
-          <div key={index} className="my-2">
+          <div key={index} className="mt-2">
             <h3>{edu.School} | {edu.Place} | {edu.Year}</h3>
             <p>{edu.Notes}</p>
           </div>
