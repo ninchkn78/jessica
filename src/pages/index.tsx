@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="flex w-full">
       <NavBar />
-      <div className="flex flex-col w-full h-screen pl-64 overflow-y-auto snap-y snap-mandatory scroll-smooth">
+      <div id="scroll-container" className="flex flex-col w-full h-screen pl-64 overflow-y-auto snap-y snap-proximity scroll-smooth">
         <Element
           name="about"
           id="about"

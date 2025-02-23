@@ -10,6 +10,7 @@ const NavBar = () => {
           to="about"
           smooth={true}
           duration={500}
+          containerId="scroll-container"
           className="cursor-pointer font-sans text-white font-bold hover:underline"
         >
           About
@@ -18,6 +19,7 @@ const NavBar = () => {
           to="teaching"
           smooth={true}
           duration={500}
+          containerId="scroll-container"
           className="cursor-pointer font-sans  text-white font-bold hover:underline"
         >
           Teaching
@@ -26,6 +28,7 @@ const NavBar = () => {
           to="service"
           smooth={true}
           duration={500}
+          containerId="scroll-container"
           className="cursor-pointer font-sans text-white font-bold hover:underline"
         >
           Academic Service
@@ -34,6 +37,7 @@ const NavBar = () => {
           to="publications"
           smooth={true}
           duration={500}
+          containerId="scroll-container"
           className="cursor-pointer font-sans text-white font-bold hover:underline"
         >
           Publications
