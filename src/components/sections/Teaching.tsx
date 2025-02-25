@@ -27,7 +27,7 @@ const Teaching = () => {
   const teachingBlurbData = teachingBlurb[0];
 
   return (
-    <div>
+    <div className="min-h-screen">
       {/* Teaching Blurb */}
       <div>
         <div className="m-6 px-6 py-6 bg-white rounded-3xl shadow-lg">

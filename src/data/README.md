@@ -47,3 +47,12 @@ will only ever take the top most json object
 - Role: 
   - Year: int[]
   - Role: string
+
+## Publications
+**Fields**
+- Conference: string
+- Year: string 
+- Publications:
+  - Name: string
+  - Description: string
+  - Link (optional): string (link to a site) -- this one makes a clickable link

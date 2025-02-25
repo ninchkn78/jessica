@@ -35,7 +35,7 @@ export default function Home() {
         <Element
           name="service"
           id="service"
-          className="flex flex-col p-12 bg-white shadow-lg snap-start snap-always"
+          className="flex flex-col pt-12 snap-start snap-always"
         >
           <Service />
         </Element>

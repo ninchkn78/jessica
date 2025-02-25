@@ -7,6 +7,8 @@
   --foreground: #171717;
   --primary: #613F75;
   --secondary: #CFBFF7;
+  --highlight1: #BC4749;
+  --highlight2: #FFBFA0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +33,14 @@
 
   h4 {
     @apply font-montserrat italic;
+  }
+
+  h5 {
+    @apply font-sans text-3xl font-bold;
+  }
+
+  h6 {
+    @apply font-sans text-lg font-bold text-gray-500;
   }
 
   p {

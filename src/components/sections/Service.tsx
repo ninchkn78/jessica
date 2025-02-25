@@ -4,7 +4,7 @@ import services from '@/data/service.json';
 
 const Service = () => {
   return (
-    <div>
+    <div className=" p-12 shadow-lg  bg-white">
       <h1>Academic Service</h1>
       {/* Carousel */}
       <div className="overflow-x-auto flex space-x-4 pt-2 pb-4">

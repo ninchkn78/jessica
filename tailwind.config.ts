@@ -17,6 +17,8 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        highlight1: "var(--highlight1)",
+        highlight2: "var(--highlight2)",
       },
       fontFamily: {
         
