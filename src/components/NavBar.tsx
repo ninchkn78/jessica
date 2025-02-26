@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Link as ScrollLink, Element } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   return (

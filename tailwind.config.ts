@@ -1,8 +1,9 @@
 import type { Config } from "tailwindcss";
 
-const generateFontSizeWithLineHeight = (size: number) => {
+function generateFontSizeWithLineHeight(size: number): [string, { lineHeight: string }] {
   return [`${size}rem`, { lineHeight: `${size * 1.5}rem` }];
 }
+
 
 export default {
   content: [
