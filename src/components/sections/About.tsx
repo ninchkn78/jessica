@@ -1,16 +1,58 @@
 import dynamic from "next/dynamic";
-import about from "@/data/about.json";
-import education from "@/data/education.json";
+// import about from "@/data/about.json";
+// import education from "@/data/education.json";
 import { useInView } from "react-intersection-observer";
 
 // framer motion without ssr because it was not hydrating correctly with it
-const MotionDiv = dynamic(() => import("framer-motion").then(mod => mod.motion.div), { ssr: false });
+const MotionDiv = dynamic(
+  () => import("framer-motion").then((mod) => mod.motion.div),
+  { ssr: false }
+);
+
+
+const about = [
+  {
+    Title: "PhD Student",
+    Place: "University of California, San Diego",
+    Email: "Email",
+    About:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    Title: "PHD Student",
+    Place: "Place",
+    Email: "Email",
+    About:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+];
+
+const education = [
+  {
+    School: "Duke University",
+    Place: "Durham, NC",
+    Year: 2022,
+    Notes:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    School: "Duke University",
+    Place: "Durham, NC",
+    Year: 2022,
+    Notes:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
 
 const About = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
 
   const aboutData = about[0];
-  const headerItems = [aboutData.Title, aboutData.Place, aboutData.Email].filter(Boolean);
+  const headerItems = [
+    aboutData.Title,
+    aboutData.Place,
+    aboutData.Email,
+  ].filter(Boolean);
 
   return (
     <div ref={ref} className="min-h-screen pt-12">
@@ -41,7 +83,9 @@ const About = () => {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <h3>{edu.School} | {edu.Place} | {edu.Year}</h3>
+              <h3>
+                {edu.School} | {edu.Place} | {edu.Year}
+              </h3>
               <p>{edu.Notes}</p>
             </MotionDiv>
           ))}

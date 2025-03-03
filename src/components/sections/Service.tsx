@@ -1,9 +1,81 @@
 import dynamic from "next/dynamic";
 import { useInView } from "react-intersection-observer";
-import services from '@/data/service.json';
+// import services from '@/data/service.json';
 
 // Framer Motion without SSR
-const MotionDiv = dynamic(() => import("framer-motion").then(mod => mod.motion.div), { ssr: false });
+const MotionDiv = dynamic(
+  () => import("framer-motion").then((mod) => mod.motion.div),
+  { ssr: false }
+);
+
+const services = [
+  {
+    Conference: "ACM SIGCSE TS",
+    Role: [
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+    ],
+  },
+  {
+    Conference: "ACM SIGCSE TS",
+    Role: [
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+    ],
+  },
+  {
+    Conference: "ACM SIGCSE TS",
+    Role: [
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+    ],
+  },
+  {
+    Conference: "ACM SIGCSE TS",
+    Role: [
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+    ],
+  },
+  {
+    Conference: "ACM SIGCSE TS",
+    Role: [
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+    ],
+  },
+  {
+    Conference: "ACM SIGCSE TS",
+    Role: [
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+      {
+        Year: [2023, 2024],
+        Role: "Reviewer",
+      },
+    ],
+  },
+];
 
 const Service = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
@@ -18,7 +90,7 @@ const Service = () => {
       >
         <h1>Academic Service</h1>
       </MotionDiv>
-      
+
       {/* Carousel */}
       <MotionDiv
         className="overflow-x-auto flex space-x-4 pt-2 pb-4"
